@@ -14,6 +14,38 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-CzechNationalBank-CzechNationalBankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CzechNationalBank-CzechNationalBankTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9503831729B290FA00EF22AA /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830729B290FA00EF22AA /* Fontisto.ttf */; };
+		9503831829B290FA00EF22AA /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830729B290FA00EF22AA /* Fontisto.ttf */; };
+		9503831929B290FA00EF22AA /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830829B290FA00EF22AA /* Octicons.ttf */; };
+		9503831A29B290FA00EF22AA /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830829B290FA00EF22AA /* Octicons.ttf */; };
+		9503831B29B290FA00EF22AA /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830929B290FA00EF22AA /* Feather.ttf */; };
+		9503831C29B290FA00EF22AA /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830929B290FA00EF22AA /* Feather.ttf */; };
+		9503831D29B290FA00EF22AA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830A29B290FA00EF22AA /* Entypo.ttf */; };
+		9503831E29B290FA00EF22AA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830A29B290FA00EF22AA /* Entypo.ttf */; };
+		9503831F29B290FA00EF22AA /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830B29B290FA00EF22AA /* FontAwesome5_Brands.ttf */; };
+		9503832029B290FA00EF22AA /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830B29B290FA00EF22AA /* FontAwesome5_Brands.ttf */; };
+		9503832129B290FA00EF22AA /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830C29B290FA00EF22AA /* MaterialCommunityIcons.ttf */; };
+		9503832229B290FA00EF22AA /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830C29B290FA00EF22AA /* MaterialCommunityIcons.ttf */; };
+		9503832329B290FA00EF22AA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830D29B290FA00EF22AA /* AntDesign.ttf */; };
+		9503832429B290FA00EF22AA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830D29B290FA00EF22AA /* AntDesign.ttf */; };
+		9503832529B290FA00EF22AA /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830E29B290FA00EF22AA /* Foundation.ttf */; };
+		9503832629B290FA00EF22AA /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830E29B290FA00EF22AA /* Foundation.ttf */; };
+		9503832729B290FA00EF22AA /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830F29B290FA00EF22AA /* Ionicons.ttf */; };
+		9503832829B290FA00EF22AA /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503830F29B290FA00EF22AA /* Ionicons.ttf */; };
+		9503832929B290FA00EF22AA /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831029B290FA00EF22AA /* FontAwesome5_Solid.ttf */; };
+		9503832A29B290FA00EF22AA /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831029B290FA00EF22AA /* FontAwesome5_Solid.ttf */; };
+		9503832B29B290FA00EF22AA /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831129B290FA00EF22AA /* FontAwesome5_Regular.ttf */; };
+		9503832C29B290FA00EF22AA /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831129B290FA00EF22AA /* FontAwesome5_Regular.ttf */; };
+		9503832D29B290FA00EF22AA /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831229B290FA00EF22AA /* FontAwesome.ttf */; };
+		9503832E29B290FA00EF22AA /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831229B290FA00EF22AA /* FontAwesome.ttf */; };
+		9503832F29B290FA00EF22AA /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831329B290FA00EF22AA /* Zocial.ttf */; };
+		9503833029B290FA00EF22AA /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831329B290FA00EF22AA /* Zocial.ttf */; };
+		9503833129B290FA00EF22AA /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831429B290FA00EF22AA /* EvilIcons.ttf */; };
+		9503833229B290FA00EF22AA /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831429B290FA00EF22AA /* EvilIcons.ttf */; };
+		9503833329B290FA00EF22AA /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831529B290FA00EF22AA /* SimpleLineIcons.ttf */; };
+		9503833429B290FA00EF22AA /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831529B290FA00EF22AA /* SimpleLineIcons.ttf */; };
+		9503833529B290FA00EF22AA /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831629B290FA00EF22AA /* MaterialIcons.ttf */; };
+		9503833629B290FA00EF22AA /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9503831629B290FA00EF22AA /* MaterialIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +75,22 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-CzechNationalBank.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CzechNationalBank.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CzechNationalBank/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CzechNationalBank-CzechNationalBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CzechNationalBank-CzechNationalBankTests.release.xcconfig"; path = "Target Support Files/Pods-CzechNationalBank-CzechNationalBankTests/Pods-CzechNationalBank-CzechNationalBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		9503830729B290FA00EF22AA /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		9503830829B290FA00EF22AA /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		9503830929B290FA00EF22AA /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		9503830A29B290FA00EF22AA /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		9503830B29B290FA00EF22AA /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		9503830C29B290FA00EF22AA /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		9503830D29B290FA00EF22AA /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		9503830E29B290FA00EF22AA /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		9503830F29B290FA00EF22AA /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		9503831029B290FA00EF22AA /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		9503831129B290FA00EF22AA /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		9503831229B290FA00EF22AA /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		9503831329B290FA00EF22AA /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		9503831429B290FA00EF22AA /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		9503831529B290FA00EF22AA /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		9503831629B290FA00EF22AA /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -116,6 +164,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9503830629B290FA00EF22AA /* Fonts */,
 				13B07FAE1A68108700A75B9A /* CzechNationalBank */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* CzechNationalBankTests */,
@@ -135,6 +184,30 @@
 				00E356EE1AD99517003FC87E /* CzechNationalBankTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9503830629B290FA00EF22AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9503830729B290FA00EF22AA /* Fontisto.ttf */,
+				9503830829B290FA00EF22AA /* Octicons.ttf */,
+				9503830929B290FA00EF22AA /* Feather.ttf */,
+				9503830A29B290FA00EF22AA /* Entypo.ttf */,
+				9503830B29B290FA00EF22AA /* FontAwesome5_Brands.ttf */,
+				9503830C29B290FA00EF22AA /* MaterialCommunityIcons.ttf */,
+				9503830D29B290FA00EF22AA /* AntDesign.ttf */,
+				9503830E29B290FA00EF22AA /* Foundation.ttf */,
+				9503830F29B290FA00EF22AA /* Ionicons.ttf */,
+				9503831029B290FA00EF22AA /* FontAwesome5_Solid.ttf */,
+				9503831129B290FA00EF22AA /* FontAwesome5_Regular.ttf */,
+				9503831229B290FA00EF22AA /* FontAwesome.ttf */,
+				9503831329B290FA00EF22AA /* Zocial.ttf */,
+				9503831429B290FA00EF22AA /* EvilIcons.ttf */,
+				9503831529B290FA00EF22AA /* SimpleLineIcons.ttf */,
+				9503831629B290FA00EF22AA /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -200,7 +273,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -235,6 +308,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9503831A29B290FA00EF22AA /* Octicons.ttf in Resources */,
+				9503832629B290FA00EF22AA /* Foundation.ttf in Resources */,
+				9503833429B290FA00EF22AA /* SimpleLineIcons.ttf in Resources */,
+				9503832829B290FA00EF22AA /* Ionicons.ttf in Resources */,
+				9503833229B290FA00EF22AA /* EvilIcons.ttf in Resources */,
+				9503832C29B290FA00EF22AA /* FontAwesome5_Regular.ttf in Resources */,
+				9503833029B290FA00EF22AA /* Zocial.ttf in Resources */,
+				9503831E29B290FA00EF22AA /* Entypo.ttf in Resources */,
+				9503833629B290FA00EF22AA /* MaterialIcons.ttf in Resources */,
+				9503832429B290FA00EF22AA /* AntDesign.ttf in Resources */,
+				9503832A29B290FA00EF22AA /* FontAwesome5_Solid.ttf in Resources */,
+				9503831829B290FA00EF22AA /* Fontisto.ttf in Resources */,
+				9503831C29B290FA00EF22AA /* Feather.ttf in Resources */,
+				9503832229B290FA00EF22AA /* MaterialCommunityIcons.ttf in Resources */,
+				9503832029B290FA00EF22AA /* FontAwesome5_Brands.ttf in Resources */,
+				9503832E29B290FA00EF22AA /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +331,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9503831729B290FA00EF22AA /* Fontisto.ttf in Resources */,
+				9503832D29B290FA00EF22AA /* FontAwesome.ttf in Resources */,
+				9503832529B290FA00EF22AA /* Foundation.ttf in Resources */,
+				9503832B29B290FA00EF22AA /* FontAwesome5_Regular.ttf in Resources */,
+				9503832729B290FA00EF22AA /* Ionicons.ttf in Resources */,
+				9503833129B290FA00EF22AA /* EvilIcons.ttf in Resources */,
+				9503831D29B290FA00EF22AA /* Entypo.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				9503832F29B290FA00EF22AA /* Zocial.ttf in Resources */,
+				9503833329B290FA00EF22AA /* SimpleLineIcons.ttf in Resources */,
+				9503831B29B290FA00EF22AA /* Feather.ttf in Resources */,
+				9503831929B290FA00EF22AA /* Octicons.ttf in Resources */,
+				9503831F29B290FA00EF22AA /* FontAwesome5_Brands.ttf in Resources */,
+				9503832329B290FA00EF22AA /* AntDesign.ttf in Resources */,
+				9503833529B290FA00EF22AA /* MaterialIcons.ttf in Resources */,
+				9503832929B290FA00EF22AA /* FontAwesome5_Solid.ttf in Resources */,
+				9503832129B290FA00EF22AA /* MaterialCommunityIcons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-CzechNationalBank-CzechNationalBankTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-CzechNationalBank-CzechNationalBankTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = CzechNationalBankTests/Info.plist;
