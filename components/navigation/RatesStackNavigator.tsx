@@ -4,7 +4,7 @@ import RateScreen from '../rates/RateScreen';
 
 const Stack = createNativeStackNavigator();
 
-function RatesStackNavigator() {
+export default function RatesStackNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -15,5 +15,3 @@ function RatesStackNavigator() {
     </Stack.Navigator>
   );
 }
-
-export default RatesStackNavigator;

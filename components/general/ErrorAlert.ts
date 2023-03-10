@@ -1,6 +1,6 @@
 import {Alert} from 'react-native';
 
-function showErrorAlert(title: string, message: string) {
+export default function showErrorAlert(title: string, message: string) {
   return Alert.alert(title, message, [
     {
       text: 'Cancel',
@@ -8,5 +8,3 @@ function showErrorAlert(title: string, message: string) {
     },
   ]);
 }
-
-export default showErrorAlert;

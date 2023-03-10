@@ -2,12 +2,10 @@ import React, {ReactNode} from 'react';
 import {View} from 'react-native';
 import styled from 'styled-components';
 
-function ScreenView(props: {children: ReactNode}) {
-  const StyledScreenView = styled(View)`
-    flex: 1;
-  `;
-
+export default function ScreenView(props: {children: ReactNode}) {
   return <StyledScreenView>{props.children}</StyledScreenView>;
 }
 
-export default ScreenView;
+const StyledScreenView = styled(View)`
+  flex: 1;
+`;

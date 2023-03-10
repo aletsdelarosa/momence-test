@@ -4,26 +4,26 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import ConversionStackNavigator from './ConversionStackNavigator';
 import RatesStackNavigator from './RatesStackNavigator';
 
-function TabNavigator() {
-  const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
-  const iconForRoute = (
-    route: string,
-    focused: boolean,
-    color: string,
-    size: number,
-  ): React.ReactNode => {
-    let iconName: string = '';
+function iconForRoute(
+  route: string,
+  focused: boolean,
+  color: string,
+  size: number,
+): React.ReactNode {
+  let iconName: string = '';
 
-    if (route === 'Rates') {
-      iconName = focused ? 'list' : 'list';
-    } else if (route === 'Convert') {
-      iconName = focused ? 'money' : 'money';
-    }
+  if (route === 'Rates') {
+    iconName = focused ? 'list' : 'list';
+  } else if (route === 'Convert') {
+    iconName = focused ? 'money' : 'money';
+  }
 
-    return <Icon name={iconName} size={size} color={color} />;
-  };
+  return <Icon name={iconName} size={size} color={color} />;
+}
 
+export default function TabNavigator() {
   return (
     <Tab.Navigator
       screenOptions={({route}) => {
@@ -41,5 +41,3 @@ function TabNavigator() {
     </Tab.Navigator>
   );
 }
-
-export default TabNavigator;

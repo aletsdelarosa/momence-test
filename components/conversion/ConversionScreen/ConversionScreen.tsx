@@ -23,27 +23,27 @@ type ConversionScreenProps = NativeStackScreenProps<
   'ConvertScreen'
 >;
 
-function ConversionScreen({navigation}: ConversionScreenProps) {
+const KorunaRate = {
+  Country: 'Czech Republic',
+  Code: 'CZK',
+  Currency: 'koruna',
+  Amount: 1,
+  Rate: 1,
+};
+
+export default function ConversionScreen({navigation}: ConversionScreenProps) {
   const [korunaQuantity, setKorunaQuantity] = useState<number>(1);
   const [currencyQuantity, setCurrencyQuantity] = useState<number>(1);
   const [currentCurrencyCode, setCurrentCurrencyCode] = useState<string>('');
-
-  const KorunaRate = {
-    Country: 'Czech Republic',
-    Code: 'CZK',
-    Currency: 'koruna',
-    Amount: 1,
-    Rate: 1,
-  };
 
   const {data, error, isError, isLoading} = useQuery<
     Map<string, CurrencyRate> | undefined,
     Error
   >('conversion-rates', async () => {
-    const rates = await RatesService.getRates();
+    const ratesMap = await RatesService.getRates();
 
-    if (rates !== undefined) {
-      const firstCurrency: CurrencyRate = rates.values().next().value;
+    if (ratesMap !== undefined) {
+      const firstCurrency: CurrencyRate = ratesMap.values().next().value;
 
       setCurrencyQuantity(
         Number(
@@ -57,51 +57,51 @@ function ConversionScreen({navigation}: ConversionScreenProps) {
       setCurrentCurrencyCode(firstCurrency.Code);
     }
 
-    return rates;
+    return ratesMap;
   });
 
-  const fromKorunaToCurrency = (quantity: number, toCurrency: string) => {
+  function fromKorunaToCurrency(quantity: number, toCurrency: string) {
     const currency: CurrencyRate = data?.get(toCurrency) ?? KorunaRate;
 
     const newRate = (quantity * currency.Amount) / currency.Rate;
 
     setCurrencyQuantity(Number(newRate.toFixed(2)));
     setKorunaQuantity(quantity);
-  };
+  }
 
-  const fromCurrencyToKoruna = (quantity: number) => {
+  function fromCurrencyToKoruna(quantity: number) {
     const currency: CurrencyRate = data?.get(currentCurrencyCode) ?? KorunaRate;
 
     const newRate = (quantity * currency.Rate) / currency.Amount;
 
     setKorunaQuantity(Number(newRate.toFixed(2)));
     setCurrencyQuantity(quantity);
-  };
+  }
 
-  const onEndKorunaEditing = (value: string) => {
+  function onEndKorunaEditing(value: string) {
     fromKorunaToCurrency(Number(value), currentCurrencyCode);
-  };
+  }
 
-  const onEndCurrencyEditing = (value: string) => {
+  function onEndCurrencyEditing(value: string) {
     fromCurrencyToKoruna(Number(value));
-  };
+  }
 
-  const didAskToChangeCurrency = () => {
+  function didAskToChangeCurrency() {
     navigation.navigate('ChangeCurrencyScreen', {
       rates: rates(),
       didSelectNewCurrency: didSelectNewCurrency,
     });
-  };
+  }
 
-  const didSelectNewCurrency = (code: string) => {
+  function didSelectNewCurrency(code: string) {
     setCurrentCurrencyCode(code);
 
     const currency: CurrencyRate = data?.get(code) ?? KorunaRate;
 
     fromKorunaToCurrency(korunaQuantity, currency.Code);
-  };
+  }
 
-  const rates = () => {
+  function rates() {
     let ratesArray: CurrencyRate[] = [];
 
     if (data !== undefined) {
@@ -111,7 +111,7 @@ function ConversionScreen({navigation}: ConversionScreenProps) {
     }
 
     return ratesArray;
-  };
+  }
 
   if (isLoading) {
     return <LoadingIndicator />;
@@ -128,10 +128,6 @@ function ConversionScreen({navigation}: ConversionScreenProps) {
 
     return <View />;
   }
-
-  const DismissKeyboardView = styled(KeyboardAvoidingView)`
-    flex: 1;
-  `;
 
   return (
     <ScreenView>
@@ -162,4 +158,6 @@ function ConversionScreen({navigation}: ConversionScreenProps) {
   );
 }
 
-export default ConversionScreen;
+const DismissKeyboardView = styled(KeyboardAvoidingView)`
+  flex: 1;
+`;

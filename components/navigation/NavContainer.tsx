@@ -7,7 +7,7 @@ import {
 import TabNavigator from './TabNavigator';
 import {useColorScheme} from 'react-native';
 
-function NavContainer() {
+export default function NavContainer() {
   const scheme = useColorScheme();
 
   const defaultTheme = scheme === 'dark' ? DarkTheme : DefaultTheme;
@@ -26,5 +26,3 @@ function NavContainer() {
     </NavigationContainer>
   );
 }
-
-export default NavContainer;

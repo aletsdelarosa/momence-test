@@ -15,23 +15,26 @@ type ConversionScreenProps = NativeStackScreenProps<
   'ChangeCurrencyScreen'
 >;
 
-function ChangeCurrencyScreen({navigation, route}: ConversionScreenProps) {
+const darkTheme = {
+  color: 'white',
+  backgroundColor: 'black',
+};
+
+const regularTheme = {
+  color: 'black',
+  backgroundColor: '#f6f6f6',
+};
+
+export default function ChangeCurrencyScreen({
+  navigation,
+  route,
+}: ConversionScreenProps) {
   const scheme = useColorScheme();
 
-  const darkTheme = {
-    color: 'white',
-    backgroundColor: 'black',
-  };
-
-  const regularTheme = {
-    color: 'black',
-    backgroundColor: '#f6f6f6',
-  };
-
-  const onPress = (code: string) => {
+  function onPress(code: string) {
     route.params.didSelectNewCurrency(code);
     navigation.goBack();
-  };
+  }
 
   return (
     <ThemeProvider theme={scheme === 'dark' ? darkTheme : regularTheme}>
@@ -53,5 +56,3 @@ function ChangeCurrencyScreen({navigation, route}: ConversionScreenProps) {
     </ThemeProvider>
   );
 }
-
-export default ChangeCurrencyScreen;

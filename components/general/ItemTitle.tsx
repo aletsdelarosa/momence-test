@@ -6,22 +6,16 @@ type ItemTitleProps = {
   title: string;
 };
 
-function ItemTitle({title}: ItemTitleProps) {
+const darkTheme = {
+  color: 'white',
+};
+
+const regularTheme = {
+  color: 'black',
+};
+
+export default function ItemTitle({title}: ItemTitleProps) {
   const scheme = useColorScheme();
-
-  const StyledTitle = styled(Text)`
-    font-size: 16px;
-    font-weight: 500;
-    color: ${props => props.theme.color};
-  `;
-
-  const darkTheme = {
-    color: 'white',
-  };
-
-  const regularTheme = {
-    color: 'black',
-  };
 
   return (
     <ThemeProvider theme={scheme === 'dark' ? darkTheme : regularTheme}>
@@ -30,4 +24,8 @@ function ItemTitle({title}: ItemTitleProps) {
   );
 }
 
-export default ItemTitle;
+const StyledTitle = styled(Text)`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${props => props.theme.color};
+`;

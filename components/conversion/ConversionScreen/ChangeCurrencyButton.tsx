@@ -7,33 +7,24 @@ type ChangeCurrencyButtonProps = {
   didAskToChangeCurrency: () => void;
 };
 
-function ChangeCurrencyButton({
+const darkTheme = {
+  backgroundColor: '#333333',
+  color: 'white',
+};
+
+const regularTheme = {
+  backgroundColor: '#f0f0f0',
+  color: 'black',
+};
+
+export default function ChangeCurrencyButton({
   didAskToChangeCurrency,
 }: ChangeCurrencyButtonProps) {
   const scheme = useColorScheme();
 
-  const ButtonView = styled(View)`
-    width: 48px;
-    height: 48px;
-    background-color: ${props => props.theme.backgroundColor};
-    border-radius: 16px;
-    align-items: center;
-    justify-content: center;
-  `;
-
-  const darkTheme = {
-    backgroundColor: '#333333',
-    color: 'white',
-  };
-
-  const regularTheme = {
-    backgroundColor: '#f0f0f0',
-    color: 'black',
-  };
-
-  const onPressChangeButton = () => {
+  function onPressChangeButton() {
     didAskToChangeCurrency();
-  };
+  }
 
   return (
     <ThemeProvider theme={scheme === 'dark' ? darkTheme : regularTheme}>
@@ -50,4 +41,11 @@ function ChangeCurrencyButton({
   );
 }
 
-export default ChangeCurrencyButton;
+const ButtonView = styled(View)`
+  width: 48px;
+  height: 48px;
+  background-color: ${props => props.theme.backgroundColor};
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+`;

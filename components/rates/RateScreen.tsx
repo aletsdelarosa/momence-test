@@ -6,7 +6,7 @@ import LoadingIndicator from '../general/LoadingIndicator';
 import showErrorAlert from '../general/ErrorAlert';
 import RatesService from '../../services/RatesService';
 
-function RateScreen() {
+export default function RateScreen() {
   const {data, error, isError, isLoading} = useQuery<
     CurrencyRate[] | undefined,
     Error
@@ -35,5 +35,3 @@ function RateScreen() {
 
   return <RatesList rates={data} />;
 }
-
-export default RateScreen;

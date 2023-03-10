@@ -7,7 +7,7 @@ type RateScreenProps = {
   rates: CurrencyRate[] | undefined;
 };
 
-function RatesList({rates}: RateScreenProps) {
+export default function RatesList({rates}: RateScreenProps) {
   return rates !== undefined ? (
     <FlatList
       data={rates}
@@ -18,5 +18,3 @@ function RatesList({rates}: RateScreenProps) {
     <View />
   );
 }
-
-export default RatesList;

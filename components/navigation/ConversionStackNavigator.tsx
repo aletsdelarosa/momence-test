@@ -14,7 +14,7 @@ export type RootStackParamList = {
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-function ConversionStackNavigator() {
+export default function ConversionStackNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -37,5 +37,3 @@ function ConversionStackNavigator() {
     </Stack.Navigator>
   );
 }
-
-export default ConversionStackNavigator;
