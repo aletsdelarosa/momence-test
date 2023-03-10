@@ -9,6 +9,7 @@ import {ThemeProvider} from 'styled-components';
 import RateItem from '../../rates/RateItem';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../../navigation/ConversionStackNavigator';
+import {makeEventNotifier} from '../../general/utils/UseEventListener';
 
 type ConversionScreenProps = NativeStackScreenProps<
   RootStackParamList,
@@ -25,6 +26,12 @@ const regularTheme = {
   backgroundColor: '#f6f6f6',
 };
 
+const notifer = makeEventNotifier<{code: string}>('OnCurrencySelected');
+
+export function useCurrencyPickerListener(listener: typeof notifer.notify) {
+  notifer.useEventListener(listener);
+}
+
 export default function ChangeCurrencyScreen({
   navigation,
   route,
@@ -32,7 +39,7 @@ export default function ChangeCurrencyScreen({
   const scheme = useColorScheme();
 
   function onPress(code: string) {
-    route.params.didSelectNewCurrency(code);
+    notifer.notify({code});
     navigation.goBack();
   }
 

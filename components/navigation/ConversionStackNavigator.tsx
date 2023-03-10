@@ -8,7 +8,6 @@ export type RootStackParamList = {
   ConvertScreen: undefined;
   ChangeCurrencyScreen: {
     rates: CurrencyRate[];
-    didSelectNewCurrency: (currency: string) => void;
   };
 };
 

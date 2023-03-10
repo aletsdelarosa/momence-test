@@ -17,6 +17,7 @@ import QuantityInput from './QuantityInput';
 import styled from 'styled-components';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../../navigation/ConversionStackNavigator';
+import {useCurrencyPickerListener} from '../ChangeCurrencyScreen/ChangeCurrencyScreen';
 
 type ConversionScreenProps = NativeStackScreenProps<
   RootStackParamList,
@@ -60,6 +61,10 @@ export default function ConversionScreen({navigation}: ConversionScreenProps) {
     return ratesMap;
   });
 
+  useCurrencyPickerListener(({code}) => {
+    didSelectNewCurrency(code);
+  });
+
   function fromKorunaToCurrency(quantity: number, toCurrency: string) {
     const currency: CurrencyRate = data?.get(toCurrency) ?? KorunaRate;
 
@@ -89,7 +94,6 @@ export default function ConversionScreen({navigation}: ConversionScreenProps) {
   function didAskToChangeCurrency() {
     navigation.navigate('ChangeCurrencyScreen', {
       rates: rates(),
-      didSelectNewCurrency: didSelectNewCurrency,
     });
   }
 
