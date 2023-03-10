@@ -68,6 +68,8 @@ function countrytoFlagIcon(country: string): string {
       return '🇬🇧';
     case 'usa':
       return '🇺🇸';
+    case 'czech republic':
+      return '🇨🇿';
     default:
       return '';
   }
